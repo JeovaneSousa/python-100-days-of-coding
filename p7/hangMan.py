@@ -75,10 +75,10 @@ word_list = ["aardvark", "baboon", "camel","dragon","husky","lion","tiger","monk
 misses = ""
 lives_counter = 6
 blank_word = []
+chosen_word = random.choice(word_list)
 
 print(logo)
 print("Welcome !\n\n")
-chosen_word = random.choice(word_list)
 
 for index in range(0,len(chosen_word)):
     blank_word += "_"  
