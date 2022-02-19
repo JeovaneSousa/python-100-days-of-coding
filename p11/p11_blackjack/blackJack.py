@@ -53,6 +53,7 @@ def aceFix(hand):
         hand.append(1)
 
 def blackJack():
+    os.system('clear')
     player_hand = []
     computer_hand = []
     player_hand = dealCards(2, player_hand)
