@@ -15,7 +15,6 @@ import random
 #     new_color = (r,g,b)
 #     rgb_colors.append(new_color)
 #     print (rgb_colors)
-
 turtle.colormode(255)
 color_list = [(152, 72, 58), (41, 126, 82), (241, 223, 195), (197, 151, 119), (154, 59, 78), (13, 19, 41),
               (107, 172, 213), (115, 184, 151), (39, 14, 24), (43, 16, 10), (43, 107, 147), (199, 235, 215),

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25da9fc2-0d2a-4076-9d1b-f75dc51d9c64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../capston-projects/hirst-painting/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capston-projects/hirst-painting/.idea/hirst-painting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-projects/hirst-painting/.idea/hirst-painting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capston-projects/hirst-painting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-projects/hirst-painting/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../capston-projects/hirst-painting/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../capston-projects/hirst-painting/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="25nc2DDcnzbgSc6AGF1LLO7CL7K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25da9fc2-0d2a-4076-9d1b-f75dc51d9c64" name="Changes" comment="" />
+      <created>1646166081723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646166081723</updated>
+      <workItem from="1646166082927" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
