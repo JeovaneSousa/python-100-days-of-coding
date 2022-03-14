@@ -9,7 +9,7 @@ class Board(Turtle):
         super().__init__()
         self.score = 0
         self.penup()
-        self.goto(x=0, y=270)
+        self.goto(x=0, y=260)
         self.color('white')
         self.hideturtle()
         self.update_score()
