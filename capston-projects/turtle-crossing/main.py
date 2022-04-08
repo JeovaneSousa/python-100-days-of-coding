@@ -11,27 +11,31 @@ screen.bgcolor('white')
 screen.title("Turtle Crossing")
 screen.listen()
 
+screen.tracer(0)
 player = TurtlePlayer()
 manage = CarManager()
 score = ScoreBoard()
-screen.tracer(0)
 screen.onkey(player.move_up, "Up")
 is_game_on = True
+
 while is_game_on:
     screen.update()
     time.sleep(0.1)
 
     manage.create_cars()
     manage.move_cars()
-    score.write_score()
+
+    # Detect collision with car.
     for cars in manage.list_of_cars:
         if player.distance(cars) < 25:
-            score.write_game_over()
-            is_game_on = False
+            player.reset_position()
+            manage.reset_manager()
+            score.update_highest_score()
 
+    # Detect when you cross the finish line
     if player.ycor() > 280:
-        manage.finish_line(score)
+        manage.next_level()
         player.reset_position()
-        score.write_score()
+        score.next_level()
 
 screen.exitonclick()

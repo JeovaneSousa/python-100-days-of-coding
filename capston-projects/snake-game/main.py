@@ -27,13 +27,13 @@ while is_game_on:
         snake.extend_snake()
 
     if snake.head.xcor() > 280 or snake.head.xcor() < - 280 or snake.head.ycor() > 280 or snake.head.ycor() < - 280:
-        is_game_on = False
-        board.game_over()
+        board.reset()
+        snake.reset_snake()
 
     for segment in snake.segments[3:]:
         if snake.head.distance(segment) < 10:
-            is_game_on = False
-            board.game_over()
+            board.reset()
+            snake.reset_snake()
 
     screen.onkey(snake.move_up, 'Up')
     screen.onkey(snake.move_down, 'Down')

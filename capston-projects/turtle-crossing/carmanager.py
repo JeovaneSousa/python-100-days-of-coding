@@ -4,6 +4,7 @@ from turtle import Turtle
 
 COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 
+START_SPEED = 5
 MOVE_INCREMENT = 10
 CAR_POSITIONS = [(280, -200), (280, -120), (280, -80), (280, 0), (280, 80), (280, 120), (280, 200)]
 
@@ -32,6 +33,9 @@ class CarManager(Turtle):
         for car in self.list_of_cars:
             car.forward(self.starting_move_distance)
 
-    def finish_line(self, scoreboard):
-        scoreboard.score += 1
+    def next_level(self):
         self.starting_move_distance += MOVE_INCREMENT
+
+    def reset_manager(self):
+        self.starting_move_distance = START_SPEED
+
