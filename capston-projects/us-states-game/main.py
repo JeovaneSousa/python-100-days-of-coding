@@ -10,7 +10,6 @@ turtle.shape(image)
 data = pandas.read_csv("50_states.csv")
 states_list = data["state"].tolist()
 correct_guesses = []
-missing_states = []
 score = 0
 game_is_on = True
 
@@ -32,9 +31,7 @@ while game_is_on:
         if score == 50:
             game_is_on = False
 
-for state in states_list:
-    if state not in correct_guesses:
-        missing_states.append(state)
+missing_states = [state for state in states_list if state not in correct_guesses]
 missing_states_dict = {"Missing States": missing_states}
 missing_states_dataframe = pandas.DataFrame(missing_states_dict)
 missing_states_dataframe.to_csv("missing_states.csv")
