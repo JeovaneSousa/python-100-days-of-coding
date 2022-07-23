@@ -7,10 +7,10 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 25
-SHORT_BREAK_MIN = 5
-LONG_BREAK_MIN = 20
+
+SHORT_BREAK_MIN = 10
 reps = 0
+max_reps = 0
 timer = None
 # ---------------------------- TIMER RESET ------------------------------- #
 def reset_timer():
@@ -24,19 +24,17 @@ def reset_timer():
 def start_timer():
     global reps
     reps += 1
-    work_sec = WORK_MIN * 60
+    work_sec = float(time_scale.get()) * 60
     short_break_sec = SHORT_BREAK_MIN * 60
-    long_break_sec = LONG_BREAK_MIN * 60
 
     if reps % 2 != 0:
         title_label.config(text= "Work Time!", fg= GREEN)
         count_down(work_sec)
-    elif reps % 8 == 0:
-        title_label.config(text="Long break!!", fg=RED)
-        count_down(long_break_sec)
     else:
-        title_label.config(text="Quick rest", fg=PINK)
+        title_label.config(text="Quick Rest", fg=RED)
         count_down(short_break_sec)
+    if reps == max_reps:
+        reset_timer()
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 def count_down(count):
@@ -89,5 +87,8 @@ reset_button.grid(row=2, column=2)
 
 time_scale = Scale(from_=0, to=60, bg=GREEN)
 time_scale.grid(row=1, column=0)
+
+rep_number_spinbox = Spinbox(from_=0, to=10, width=2)
+rep_number_spinbox.grid(row=1, column=2)
 
 window.mainloop()
